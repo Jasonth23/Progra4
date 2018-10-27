@@ -17,9 +17,19 @@ namespace Interface.LogicaNegocio
             var elResultado = "Implementando Iemplocalculos";
             return elResultado;
         }
+        string IEjemploCalculos.show(string mensaje)
+        {
+            var elResultado = "Implementando Iemplocalculos"+mensaje;
+            return elResultado;
+        }
         string IEjemploCalculosDos.show()
         {
             var elResultado = "Implementando IemplocalculosDos";
+            return elResultado;
+        }
+        string IEjemploCalculosDos.show(string mensaje)
+        {
+            var elResultado = "Implementando IemplocalculosDos"+mensaje;
             return elResultado;
         }
         public string GetData(int value)
