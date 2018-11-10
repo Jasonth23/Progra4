@@ -35,6 +35,7 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnLista = new System.Windows.Forms.Button();
+            this.chbAgreg = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -100,11 +101,22 @@
             this.btnLista.UseVisualStyleBackColor = true;
             this.btnLista.Click += new System.EventHandler(this.button1_Click);
             // 
+            // chbAgreg
+            // 
+            this.chbAgreg.AutoSize = true;
+            this.chbAgreg.Location = new System.Drawing.Point(123, 79);
+            this.chbAgreg.Name = "chbAgreg";
+            this.chbAgreg.Size = new System.Drawing.Size(84, 17);
+            this.chbAgreg.TabIndex = 7;
+            this.chbAgreg.Text = "agregar final";
+            this.chbAgreg.UseVisualStyleBackColor = true;
+            // 
             // frmEstrucEnum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chbAgreg);
             this.Controls.Add(this.btnLista);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.btnAgregar);
@@ -129,6 +141,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button btnLista;
+        private System.Windows.Forms.CheckBox chbAgreg;
     }
 }
 

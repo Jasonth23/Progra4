@@ -34,6 +34,10 @@ namespace Ejemplos.Enumerables
             miListaHileras.Add(tbAgregar.Text);
             miDiccionario.Add(contador, tbAgregar.Text);
             miHash.Add(tbAgregar.Text);
+            if (chbAgreg.Checked)
+            {
+                miLinkedList.AddLast(tbAgregar.Text);
+            }
             miLinkedList.AddFirst(tbAgregar.Text);
             try
             {
