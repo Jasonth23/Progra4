@@ -5,12 +5,13 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using Progra4.AW.Products.Model;
 
 namespace Progra4.AW.Products.BL
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    public class WcfAWProductos : IAWProductos
     {
         public string GetData(int value)
         {
@@ -28,6 +29,28 @@ namespace Progra4.AW.Products.BL
                 composite.StringValue += "Suffix";
             }
             return composite;
+        }
+
+        public IList<Product> ListarProductosPorColor(string color)
+        {
+            var elRepositorio = new Repositorio.Productos();
+            var elResultado = elRepositorio.ListarProductosPorColor(color);
+            return elResultado;
+        }
+
+        public IList<Product> ListarProductosPorNombreDeCategoria(string laCategoria)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAWProductos.ListarProductosPorColor(string color)
+        {
+            throw new NotImplementedException();
         }
     }
 }
