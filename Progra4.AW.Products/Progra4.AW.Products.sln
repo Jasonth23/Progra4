@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Progra4.AW.Products", "Progra4.AW.Products\Progra4.AW.Products.csproj", "{B34B44C5-7444-452F-AE95-70A2920A7DBA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DC00FD1-9BB3-412F-A534-447629ECF616} = {5DC00FD1-9BB3-412F-A534-447629ECF616}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Progra4.AW.Products.Model", "Progra4.AW.Products.Model\Progra4.AW.Products.Model.csproj", "{591A1FB5-C392-4830-8CAD-FF833AA7E44B}"
 EndProject

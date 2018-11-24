@@ -48,7 +48,7 @@ namespace Progra4.AW.Products.BL
             throw new NotImplementedException();
         }
 
-        void IAWProductos.ListarProductosPorColor(string color)
+        IList<Model.Product> IAWProductos.ListarProductosPorColor(string color)
         {
             throw new NotImplementedException();
         }

@@ -23,7 +23,7 @@ namespace Progra4.AW.Products.BL
         [OperationContract]
         void ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior);
         [OperationContract]
-        void ListarProductosPorColor(string color);
+        IList<Model.Product> ListarProductosPorColor(string color);
         [OperationContract]
         IList<Model.Product> ListarProductosPorNombreDeCategoria(string laCategoria);
     }
