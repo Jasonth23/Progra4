@@ -21,7 +21,7 @@ namespace Progra4.AW.Products.BL
 
         // TODO: Add your service operations here
         [OperationContract]
-        void ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior);
+        IList<Model.Product> ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior);
         [OperationContract]
         IList<Model.Product> ListarProductosPorColor(string color);
         [OperationContract]

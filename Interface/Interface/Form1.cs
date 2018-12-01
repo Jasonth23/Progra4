@@ -21,10 +21,10 @@ namespace Interface
         {
             var elCalculo = new Interface.LogicaNegocio.EjemploCalculos();
             var elPrimerCalc = (Interface.LogicaNegocio.IEjemploCalculos)elCalculo;
-            tbMensj1.Text = elPrimerCalc.show(tbSalida1.Text);
+            tbSalida1.Text = elPrimerCalc.show(tbMensj1.Text);
             
             var ElSegundo = (Interface.LogicaNegocio.IEjemploCalculosDos)elCalculo;
-            tbMensj2.Text = ElSegundo.show();
+            tbSalida2.Text = ElSegundo.show();
 
         }
     }
