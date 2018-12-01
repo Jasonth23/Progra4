@@ -8,7 +8,7 @@ namespace Progra4.AW.Products.Model
 {
     public class comboDeProductos
     {
-        int idProducto;
-        string NombreProducto;
+        public int idProducto;
+        public string NombreProducto;
     }
 }

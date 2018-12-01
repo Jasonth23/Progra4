@@ -16,7 +16,9 @@ namespace Progra4.AW.Products.BL.Repositorio
         }
         public IList<Model.comboDeProductos> ListarIdyNombrePorColor(string elColor)
         {
-            var elResultado = _contexto.Product.Where(p => p.Color.Contains(elColor)).ToList();
+            var laListaProductos = _contexto.Product.Where(p => p.Color.Contains(elColor));
+            IList<Model.comboDeProductos> elResultado = laListaProductos.Select(p => new Model.comboDeProductos
+            { idProducto = p.ProductID, NombreProducto = p.Name }).ToList();
             return elResultado;
         }
 
