@@ -14,15 +14,22 @@ namespace Progra4.AW.Products.BL.Repositorio
             var elResultado = _contexto.Product.Where(p => p.Color.Contains(elColor)).ToList();
             return elResultado;
         }
-
-        public IList<Model.Product> ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior)
+        public IList<Model.comboDeProductos> ListarIdyNombrePorColor(string elColor)
         {
-            var elResultado = _contexto.Product.where(p => p.)
+            var elResultado = _contexto.Product.Where(p => p.Color.Contains(elColor)).ToList();
+            return elResultado;
         }
-        public IList<Model.Product> ListarProductosPorNombreDeCategoria(string laCategoria)
+
+
+
+        // public IList<Model.Product> ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior)
+        //{
+
+        //}
+        /*public IList<Model.Product> ListarProductosPorNombreDeCategoria(string laCategoria)
         {
 
-        }
+        }*/
 
     }
 }

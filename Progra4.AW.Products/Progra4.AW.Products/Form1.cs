@@ -16,5 +16,11 @@ namespace Progra4.AW.Products
         {
             InitializeComponent();
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            var elAccesoBI = new AccesoBL.Productos();
+            var listaDeProductos = elAccesoBI.ListarProductosPorColor(cbColores.Text);
+        }
     }
 }

@@ -52,5 +52,10 @@ namespace Progra4.AW.Products.BL
         {
             throw new NotImplementedException();
         }
+
+        IList<Product> IAWProductos.ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

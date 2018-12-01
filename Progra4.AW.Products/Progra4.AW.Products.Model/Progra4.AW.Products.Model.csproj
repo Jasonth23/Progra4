@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class2.cs" />
+    <Compile Include="MisTablas\comboDeProductos.cs" />
     <Compile Include="MisTablas\Product.cs" />
     <Compile Include="Product.cs">
       <DependentUpon>ProductsSchema.tt</DependentUpon>
